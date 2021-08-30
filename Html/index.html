@@ -2,18 +2,22 @@
 
 <body style="background-color:green;">
 
+<div class="title" id="1">
+
 <h1 style="text-align:center"> Welcome to SRE Bootcamp Demo! </hi>
 
 <br>
 <br>
 <br>
+</div>
 
-<form>
+<div class="button" id="2">
+<form action="{{ url_for("create")}}" method="post">
 
 <label for="fname"> Name: </label>
 <br>
-<input type="text" id="fname" name="fname"><br><br>
-<input type="submit" value="Submit"
+<input type="text" id="fname" name="fname" placeholder="firstname"><br><br>
+<button type="submit">Submit</button>
 
 </form>
 
