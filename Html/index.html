@@ -1,5 +1,21 @@
 <html>
 
+<script>
+
+function createtask() {
+
+
+        var newdata = {};
+        newdata['id'] = document.getElementById("name1").value;
+        console.log(newdata);
+        var jsondata = JSON.stringify(newdata);
+        console.log(jsondata)
+        return jsondata;
+    }
+
+
+</script>
+
 <body style="background-color:green;">
 
 <div class="title" id="1">
@@ -16,8 +32,8 @@
 
 <label for="fname"> Name: </label>
 <br>
-<input type="text" id="fname" name="fname" placeholder="firstname"><br><br>
-<button type="submit">Submit</button>
+<input type="text" id="name1" placeholder="firstname"><br><br>
+<input type="button" onclick="createtask()" value="SUBMIT">
 
 </form>
 
